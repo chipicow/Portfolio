@@ -6,7 +6,7 @@
 /**
  * Main AngularJS Web Application
  */
-var app = angular.module('tutorialWebApp', [
+var app = angular.module('webApp', [
   'ngRoute'
 ]);
 
@@ -18,16 +18,14 @@ app.config(['$routeProvider', function ($routeProvider) {
     // Home
     .when("/", {templateUrl: "partials/home.html", controller: "PageCtrl"})
     // Pages
-    .when("/about", {templateUrl: "partials/about.html", controller: "PageCtrl"})
-    .when("/faq", {templateUrl: "partials/faq.html", controller: "PageCtrl"})
-    .when("/pricing", {templateUrl: "partials/pricing.html", controller: "PageCtrl"})
-    .when("/services", {templateUrl: "partials/services.html", controller: "PageCtrl"})
-    .when("/contact", {templateUrl: "partials/contact.html", controller: "PageCtrl"})
-    // Blog
-    .when("/games", {templateUrl: "partials/games.html", controller: "GameCtrl"})
-    .when("/games/trexgame", {templateUrl: "partials/games_trexgame.html", controller: "GameCtrl"})
+    .when("/skills", {templateUrl: "partials/skills.html", controller: "PageCtrl"})
+    .when("/contacts", {templateUrl: "partials/contacts.html", controller: "PageCtrl"})
+    .when("/hobbies", {templateUrl: "partials/hobbies.html", controller: "PageCtrl"})
+    // Games
+    .when("/games", {templateUrl: "partials/games/games.html", controller: "GameCtrl"})
+    .when("/games/trexgame", {templateUrl: "partials/games/trexgame/trexgame.html", controller: "GameCtrl"})
     // else 404
-    .otherwise("/404", {templateUrl: "partials/404.html", controller: "PageCtrl"});
+    .otherwise({redirectTo: '/home'});
 }]);
 
 /**
