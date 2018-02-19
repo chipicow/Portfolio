@@ -1,1 +1,16 @@
-list of games
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <h2 class="page-header">Os meus jogos</h2>
+        </div>
+        <table>
+                <tr>
+                    <th class="text-center">ola</th>
+                    <th class="text-center">yikes</th>
+                </tr>
+                <tr ng-repeat="game in $ctrl.gameList">
+                    <td class="text-center" ng-bind="game.link"></td>
+                    <td class="text-center" ng-bind="game.description"></td>
+                </tr>
+        </table>
+</div>

@@ -6,7 +6,8 @@ var concat = require('gulp-concat');
 
 var appJsFiles = [
     './js/main.js',
-    './partials/games/trexgame/*.js'
+    './partials/**/**/*.js',
+    './partials/**/*.js'
 ];
 
 var nodemon = require('gulp-nodemon');
