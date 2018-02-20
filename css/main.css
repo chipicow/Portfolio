@@ -10,11 +10,13 @@ For more info and more free Bootstrap 3 HTML themes, visit http://startbootstrap
 
 html, body {
     height: 100%;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
     padding-top: 50px;
     padding-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .dropdown {
@@ -368,6 +370,128 @@ body {
   margin-bottom: 0.75rem;
 }
 
+   ABOUT              
+  -----------------------------------------*/
+
+  #about {
+    text-align: left;
+    padding-bottom: 0;
+  }
+
+  #about .about-info:first-child {
+    margin-right: 40px;
+  }
+
+  .about-info .section-title {
+    margin: 40px 0 40px 0;
+  }
+
+  .about-info {
+    margin-top: 60px;
+  }
+
+  .skill-thumb strong {
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+
+  .skill-thumb .progress {
+    background: #ffffff;
+    border-radius: 5px;
+    box-shadow: none;
+    height: 3px;
+    margin-bottom: 25px;
+  }
+
+  .skill-thumb .progress-bar {
+    background: #1f1f1f;
+    box-shadow: none;
+  }
+footer {
+    position: relative;
+    padding-top: 80px;
+    padding-bottom: 60px;
+  }
+
+  footer h2 {
+    color: #ffffff;
+  }
+
+  .footer-link {
+    margin: 0;
+    padding: 0;
+  }
+
+  .footer-link li {
+    display: block;
+    list-style: none;
+    margin: 5px 10px 5px 0;
+  }
+
+  footer p,
+  footer span,
+  .footer-link li a {
+    color: #d9d9d9;
+  }
+
+  .copyright-text p,
+  .footer-bottom .phone-contact p {
+    font-size: 14px;
+  }
+
+  .footer-info p {
+    margin-right: 4em;
+  }
+
+  .footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.1);
+    margin-top: 5em;
+    padding-top: 3em;
+  }
+
+  .footer-bottom .phone-contact,
+  .footer-bottom .social-icon {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .footer-bottom .phone-contact {
+    margin-right: 40px;
+  }
+
+  .footer-bottom .phone-contact span {
+    font-weight: 500;
+    display: inline-block;
+    margin-left: 10px;
+  }
+  /*---------------------------------------
+     SOCIAL ICON              
+  -----------------------------------------*/
+
+  .social-icon {
+    position: relative;
+    padding: 0;
+    margin: 0;
+  }
+
+  .social-icon li {
+    display: inline-block;
+    list-style: none;
+  }
+
+  .social-icon li a {
+    border-radius: 100px;
+    color: #d9d9d9;
+    font-size: 15px;
+    text-decoration: none;
+    position: relative;
+    margin: 5px 10px;
+  }
+
+  .social-icon li a:hover {
+    color: #ce3232;
+  }
+
 @media (min-width: 576px) {
   .card-columns {
     -webkit-column-count: 3;
@@ -383,11 +507,6 @@ body {
   }
 }
 
-/* Footer Styles */
-footer {
-    margin: 50px 0;
-}
-
 /* Responsive Styles */
 @media (max-width: 767px) {
 
@@ -396,3 +515,4 @@ footer {
         /* increases the carousel height so it looks good on phones */
     }
 }
+
