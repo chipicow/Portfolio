@@ -1,7 +1,7 @@
 app.controller('HomeCtrl', function () {
 	var vm = this;
 	vm.passions = [];
-	var Coding = {
+		var Coding = {
 			name : 'Writing Code',
 			percentage : '80%',
 			value: '80'

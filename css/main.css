@@ -15,8 +15,13 @@ html, body {
 }
 
 body {
-  background-color: #353b43;
-  color: #737f8a;
+  
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  background-image: linear-gradient(to top, #F2F7FF 0%, #1A2129 100%);
+  color: #2d3544;
     padding-top: 50px;
     padding-bottom: 20px;
     font-family: 'Poppins', sans-serif;
