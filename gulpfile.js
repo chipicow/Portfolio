@@ -18,9 +18,13 @@ gulp.task('nodemon', function() {
     ignore: ['dist/']
   })
   .on('restart', function() {
-    console.log('>> node restart');
-  })
+    gulp.src(appJsFiles) // path to your files
+    .pipe(uglify())
+  .pipe(concat('app.js'))
+    .pipe(gulp.dest('./js'));
 });
+    console.log('>> node restart');
+  });
 // task
 gulp.task('js', function () {
     gulp.src(appJsFiles) // path to your files

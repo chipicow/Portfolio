@@ -1,3 +1,3 @@
 app.controller('HobbiesCtrl', function () {
-	console.log('oi genti');
+	console.log('mudei12');
 });

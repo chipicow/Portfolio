@@ -1,16 +1,20 @@
-<div class="container">
-    <div class="row">
-        <div class="col-lg-12">
-            <h2 class="page-header">Os meus jogos</h2>
+<div ng-controller="GamesCtrl as vm">
+	<div class="container">
+		<div class="col-lg-12">
+            <h2 class="page-header">As minhas Apps</h2>
         </div>
-        <table>
-                <tr>
-                    <th class="text-center">ola</th>
-                    <th class="text-center">yikes</th>
-                </tr>
-                <tr ng-repeat="game in $ctrl.gameList">
-                    <td class="text-center" ng-bind="game.link"></td>
-                    <td class="text-center" ng-bind="game.description"></td>
-                </tr>
-        </table>
+		<div class="row">
+        	<div class="col-lg-4 col-sm-6 portfolio-item" ng-repeat="game in vm.gameList" > 
+          	<div class="card h-100">
+           	 <img class="card-img-top" src="{{game.image}}" alt="">
+            	<div class="card-body">
+             	 <h4 class="card-title">
+               	 <a href="{{game.link}}" ng-bind ="game.name"></a>
+              	</h4>
+              	<p class="card-text" ng-bind="game.description"></p>
+            	</div>
+         	 </div>
+        	</div>
+        </div>
+ 	</div>
 </div>

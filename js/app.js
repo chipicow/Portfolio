@@ -1,6 +1,6 @@
 var app=angular.module("webApp",["ngRoute"]);app.config(["$routeProvider",function(l){l.when("/",{templateUrl:"partials/home/home.html",controller:"HomeCtrl",controllerAs:"vm"}).when("/skills",{templateUrl:"partials/skills/skills.html",controller:"SkillsCtrl",controllerAs:"vm"}).when("/contacts",{templateUrl:"partials/contacts/contacts.html",controller:"ContactsCtrl",controllerAs:"vm"}).when("/hobbies",{templateUrl:"partials/hobbies/hobbies.html",controller:"HobbiesCtrl",controllerAs:"vm"}).when("/games",{templateUrl:"partials/games/games.html",controller:"GamesCtrl",controllerAs:"vm"}).otherwise({redirectTo:"/"})}]);
 app.controller("ContactsCtrl",function(){});
-app.controller("GamesCtrl",function(){this.gameList=[];this.gameList.push({link:"https://peixebalao.azurewebsites.net/public/index.html",name:"Ballon Fish",description:"Avoid the spikes and the squares, the more you hit the harder the game gets, try out and beat my best score"})});
-app.controller("HobbiesCtrl",function(){console.log("oi genti")});
+app.controller("HobbiesCtrl",function(){console.log("mudei12")});
+app.controller("GamesCtrl",function(){var e=this;e.gameList=[],e.CreateBallonGame=function(){e.gameList.push({link:"https://peixebalao.azurewebsites.net/public/index.html",name:"Ballon Fish",description:"Avoid the spikes and the squares, the more you hit the harder the game gets, try out and beat my best score of 9999",image:"images/ballonFishGame.jpg"})},e.CreateBallonGame(),e.CreateBallonGame()});
 app.controller("SkillsCtrl",function(){});
 app.controller("HomeCtrl",function(){});
