@@ -8,22 +8,44 @@ For more info and more free Bootstrap 3 HTML themes, visit http://startbootstrap
 
 /* Global Styles */
 
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800);
 html, body {
     height: 100%;
     font-family: 'Poppins', sans-serif;
 }
 
 body {
+  background-color: #353b43;
+  color: #737f8a;
     padding-top: 50px;
     padding-bottom: 20px;
     font-family: 'Poppins', sans-serif;
+
 }
 
 .dropdown {
     cursor:pointer;
 }
 
+.crop {
+ height: 100px;
+ width: 100px;
+ overflow: hidden;
+}
+.crop img {
+ height: auto;
+ width: 100px;
+}
 
+.imgSkills {
+    position: relative;
+    float: left;
+    width:  100px;
+    height: 100px;
+    background-position: 50% 50%;
+    background-repeat:   no-repeat;
+    background-size:     cover;
+}
 .img-home-portfolio,
 .img-customer,
 .portfolio-item {
@@ -41,7 +63,7 @@ body {
 }
 
 .section-colored {
-    background-color: #e1e1e1;
+    background-color: #353b43;
     /* change this to change the background color of a colored section */
 }
 
@@ -261,6 +283,112 @@ body {
   margin-bottom: 15px;
 }
 
+
+#our_service{
+    background-position: center;
+    background-size: cover;
+    padding: 60px 0;
+}
+#our_service h3{
+    color: white;
+}
+#our_service hr{
+    border-color: white;
+}
+.about-us-text {
+    padding: 0px 100px;
+    font-size: 15px;
+    font-weight: 400;
+}
+.services
+{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.service{
+    background-color: #353b43;
+}
+.service img{
+    width: 100%;
+}
+h4{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 55px 0px 15px ;
+}
+.service p{
+    font-size: 13px;
+    font-weight: 400;
+    padding: 0px 10px 35px 10px;
+    line-height: 22px;
+}
+.about-service 
+{
+    font-size: 16px;
+    padding: 5px 10px 0px 10px;
+}
+
+.service-icon i 
+{
+    padding: 20px 0px;
+    font-size: 5em;
+    transition: font-size 0.5s;
+    display: table-cell;
+    vertical-align: middle;
+}
+.service-icon
+{
+    display: table;
+    min-height: 140px;
+    text-align: center;
+    width: 100%;
+}
+hr
+{
+    border-color: rgb(101,85,124);
+}
+.full
+{
+    width: 10%;
+}
+.fa-code
+{
+    color: cadetblue;
+}
+.fa-desktop
+{
+    color: lightslategray;
+}
+.fa-th
+{
+    color: rgb(114, 184, 211);
+}
+.fa-gamepad
+{
+    color: rgba(0, 0, 128, 0.58);
+}
+.fa-lightbulb-o
+{
+    color: grey;
+}
+.fa-stack-overflow
+{
+    color: #C09553;
+}
+.service:hover .service-icon i
+{
+    font-size: 7em;
+}
+.service:hover .about-service h3 
+{
+    color: rgb(175, 104, 77)
+}
+.service
+{
+    text-align: center;
+}
+
 @media (min-width: 576px) {
   .card-deck {
     -webkit-box-orient: horizontal;
@@ -369,7 +497,7 @@ body {
 .card-columns .card {
   margin-bottom: 0.75rem;
 }
-
+/*
    ABOUT              
   -----------------------------------------*/
 
@@ -396,7 +524,7 @@ body {
   }
 
   .skill-thumb .progress {
-    background: #ffffff;
+    background: #1f1f1f;
     border-radius: 5px;
     box-shadow: none;
     height: 3px;
@@ -404,7 +532,7 @@ body {
   }
 
   .skill-thumb .progress-bar {
-    background: #1f1f1f;
+    background: #ffffff;
     box-shadow: none;
   }
 footer {
@@ -492,6 +620,39 @@ footer {
     color: #ce3232;
   }
 
+
+  /*//////////////////////////////////////////////////////////////////////////////
+//                              Screen Shot
+////////////////////////////////////////////////////////////////////////////////*/
+#ScreenShot{
+    text-align: center;
+    padding: 60px 0;
+}
+#ScreenShot h3{
+    color: white;
+}
+#ScreenShot hr{
+    border-color: white;
+}
+#ScreenShot .owl-carousel {
+    display: block;
+    position: relative;
+    width: 100%;
+}
+#ScreenShot .item img{
+    padding: 20px;
+    width: 100%;
+}
+.owl-theme .owl-controls .owl-buttons div {
+    color: #39c;
+    margin: 5px 20px;
+    padding: 2px 15px;
+    font-size: 23px;
+    border-radius: 100%;
+    background: #FFFFFF;
+    opacity: 1;
+}
+
 @media (min-width: 576px) {
   .card-columns {
     -webkit-column-count: 3;
@@ -514,5 +675,156 @@ footer {
         height: 70%;
         /* increases the carousel height so it looks good on phones */
     }
+}
+
+/* 
+ *  Core Owl Carousel CSS File
+ *  v1.3.3
+ */
+
+/* clearfix */
+.owl-carousel .owl-wrapper:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+/* display none until init */
+.owl-carousel{
+  display: none;
+  position: relative;
+  width: 100%;
+  -ms-touch-action: pan-y;
+}
+.owl-carousel .owl-wrapper{
+  display: none;
+  position: relative;
+  -webkit-transform: translate3d(0px, 0px, 0px);
+}
+.owl-carousel .owl-wrapper-outer{
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+.owl-carousel .owl-wrapper-outer.autoHeight{
+  -webkit-transition: height 500ms ease-in-out;
+  -moz-transition: height 500ms ease-in-out;
+  -ms-transition: height 500ms ease-in-out;
+  -o-transition: height 500ms ease-in-out;
+  transition: height 500ms ease-in-out;
+}
+  
+.owl-carousel .owl-item{
+  float: left;
+}
+.owl-controls .owl-page,
+.owl-controls .owl-buttons div{
+  cursor: pointer;
+}
+.owl-controls {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* mouse grab icon */
+.grabbing { 
+    cursor:url(grabbing.png) 8 8, move;
+}
+
+/* fix */
+.owl-carousel  .owl-wrapper,
+.owl-carousel  .owl-item{
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility:    hidden;
+  -ms-backface-visibility:     hidden;
+  -webkit-transform: translate3d(0,0,0);
+  -moz-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+}
+
+/*
+*   Owl Carousel Owl Demo Theme 
+* v1.3.3
+*/
+
+.owl-theme .owl-controls{
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Styling Next and Prev buttons */
+
+.owl-theme .owl-controls .owl-buttons div{
+  color: #FFF;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;/*IE7 life-saver */
+  margin: 5px;
+  padding: 3px 10px;
+  font-size: 12px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  background: #869791;
+  filter: Alpha(Opacity=50);/*IE7 fix*/
+  opacity: 0.5;
+}
+/* Clickable class fix problem with hover on touch devices */
+/* Use it for non-touch hover action */
+.owl-theme .owl-controls.clickable .owl-buttons div:hover{
+  filter: Alpha(Opacity=100);/*IE7 fix*/
+  opacity: 1;
+  text-decoration: none;
+}
+
+/* Styling Pagination*/
+
+.owl-theme .owl-controls .owl-page{
+  display: inline-block;
+  zoom: 1;
+  *display: inline;/*IE7 life-saver */
+}
+.owl-theme .owl-controls .owl-page span{
+  display: block;
+  width: 12px;
+  height: 12px;
+  margin: 5px 7px;
+  filter: Alpha(Opacity=50);/*IE7 fix*/
+  opacity: 0.5;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  background: #869791;
+}
+
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls.clickable .owl-page:hover span{
+  filter: Alpha(Opacity=100);/*IE7 fix*/
+  opacity: 1;
+}
+
+/* If PaginationNumbers is true */
+
+.owl-theme .owl-controls .owl-page span.owl-numbers{
+  height: auto;
+  width: auto;
+  color: #FFF;
+  padding: 2px 10px;
+  font-size: 12px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+}
+
+/* preloading images */
+.owl-item.loading{
+  min-height: 150px;
+  background: url(AjaxLoader.gif) no-repeat center center
 }
 
