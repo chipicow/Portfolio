@@ -7,23 +7,21 @@
      <div class="container" ng-repeat="hobby in vm.hobbies">
       <div class="row text-center heading" >
        <div class="wow animated zoomInDown heading-text">
-        <h3 ng-bind="hobby.name"></h3>
-        <hr class="full">
-      </div> <!-- #heading-text -->
+        <h4 ng-bind="hobby.name"></h4>
+      </div>
     </div>
     <div class="main_content">
-      <div class="col-lg-4 col-sm-6 portfolio-item" ng-repeat="picture in hobby.pictures" > 
+      <div class="col-lg-3 col-sm-3 portfolio-item" ng-repeat="picture in hobby.pictures" > 
        <div class="card h-100">
          <img class="card-img-top" src="{{picture.image}}" alt="">
          <div class="card-body">
            <div class="card-title">
-             <p style="color : #2d3544" ng-bind ="picture.description"></p>
+             <p style="color : #2d3544; text-align: center" ng-bind ="picture.description"></p>
            </div>
          </div>
        </div>
      </div>
-   </div>	<!-- .container -->
- </div>	<!-- main_content -->
- <!--</div>	 container -->
-</section>	<!-- #ScreenShot -->
+   </div>
+ </div>	
+</section>
 </div>
