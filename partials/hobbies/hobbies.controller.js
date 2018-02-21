@@ -31,5 +31,4 @@ app.controller('HobbiesCtrl', function () {
 	cycling.pictures.push(paragem);
 	cycling.pictures.push(chuva);
 	vm.hobbies.push(cycling);
-	console.log(cycling);
 });

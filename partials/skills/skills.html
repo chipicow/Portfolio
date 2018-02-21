@@ -10,7 +10,7 @@
           <div class="row">
            <div class="col-lg-3 col-sm-6 portfolio-item" ng-repeat="skill in vm.skills" > 
             <div class="card h-100">
-              <img class="card-img-top" src="{{skill.image}}" alt="">
+              <img class="card-img-top" ng-src="{{skill.image}}" alt="">
               <div class="card-body">
                <div class="card-title" style="text-align: center">
                 <strong style="color : #2d3544" ng-bind ="skill.name" ></strong>

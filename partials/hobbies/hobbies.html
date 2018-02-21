@@ -10,10 +10,10 @@
         <h4 ng-bind="hobby.name"></h4>
       </div>
     </div>
-    <div class="main_content">
-      <div class="col-lg-3 col-sm-3 portfolio-item" ng-repeat="picture in hobby.pictures" > 
+    <div class="main_content" ng-repeat="picture in hobby.pictures">
+      <div class="col-lg-3 col-sm-3 portfolio-item" > 
        <div class="card h-100">
-         <img class="card-img-top" src="{{picture.image}}" alt="">
+         <img class="card-img-top" ng-src="{{picture.image}}" alt="">
          <div class="card-body">
            <div class="card-title">
              <p style="color : #2d3544; text-align: center" ng-bind ="picture.description"></p>
