@@ -1,5 +1,4 @@
 app.controller('HobbiesCtrl', function () {
-
 	var vm = this;
 	vm.hobbies = [];
 	var cycling = {

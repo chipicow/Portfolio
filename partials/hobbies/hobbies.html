@@ -1,29 +1,29 @@
 <div class="container">
-    <div class="row">
-        <div class="col-lg-12">
-            <h2 class="page-header">Os meus Hobbies</h2>
-        </div>
-        <section id="ScreenShot">
-			<div class="container" ng-repeat="hobby in vm.hobbies">
-				<div class="row text-center heading" >
-	        		<div class="wow animated zoomInDown heading-text">
-	        			<h3 ng-bind="hobby.name"></h3>
-	                	<hr class="full">
-	        		</div> <!-- #heading-text -->
-		        </div>
-			    <div class="main_content">
-			    	<div class="col-lg-4 col-sm-6 portfolio-item" ng-repeat="picture in hobby.pictures" > 
-          	<div class="card h-100">
-           	 <img class="card-img-top" src="{{picture.image}}" alt="">
-            	<div class="card-body">
-             	 <div class="card-title">
-               	 <p ng-bind ="picture.description"></p>
-              	</div>
-            	</div>
-         	 </div>
-        	</div>
-			</div>	<!-- .container -->
-		</div>	<!-- main_content -->
-			<!--</div>	 container -->
-		</section>	<!-- #ScreenShot -->
+  <div class="row">
+    <div class="col-lg-12">
+      <h2 class="page-header"><strong>My Hobbies</strong></h2>
+    </div>
+    <section id="ScreenShot">
+     <div class="container" ng-repeat="hobby in vm.hobbies">
+      <div class="row text-center heading" >
+       <div class="wow animated zoomInDown heading-text">
+        <h3 ng-bind="hobby.name"></h3>
+        <hr class="full">
+      </div> <!-- #heading-text -->
+    </div>
+    <div class="main_content">
+      <div class="col-lg-4 col-sm-6 portfolio-item" ng-repeat="picture in hobby.pictures" > 
+       <div class="card h-100">
+         <img class="card-img-top" src="{{picture.image}}" alt="">
+         <div class="card-body">
+           <div class="card-title">
+             <p style="color : #2d3544" ng-bind ="picture.description"></p>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>	<!-- .container -->
+ </div>	<!-- main_content -->
+ <!--</div>	 container -->
+</section>	<!-- #ScreenShot -->
 </div>

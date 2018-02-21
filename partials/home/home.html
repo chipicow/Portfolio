@@ -1,23 +1,23 @@
     <img src="images/icon.jpg" class="img-thumbnail border border-light rounded  " alt="" style="width: 100px; height: 100px ; margin-left: 30px; margin-top: 30px">        
-	<div class="container" style="margin-top: -130px">
-		<div class="col-lg-12">
-            <h2 class="page-header">Let me Introduce myself</h2>
+    <div class="container" style="margin-top: -130px">
+      <div class="col-lg-12">
+        <h2 class="page-header"><strong>Let Me Introduce Myself</strong></h2>
+    </div>
+    <div class="row">
+     <div class="col-md-7 col-sm-6">
+        <div class="about-info">
+            <strong>Hey there! This is Tiago, a full-stack developer at <a style="color: #e0e2e5;border-bottom: 0.5px solid white;" href="http://www.glintt.com" target="_blank">Glintt</a> who also loves to write code in his free time. Other than that, I love learning about new and interesting libraries and cycling.</strong>
         </div>
-		<div class="row">
-			<div class="col-md-5 col-sm-6">
-                <div class="about-info">
-                    <strong>Hey there! This is Tiago, a full-stack developer at <a href="http://www.glintt.com" target="_blank">Glintt</a> who also loves to write code in his free time. Other than that, I love learning about new and interesting libraries and cycling.</strong>
-                </div>
-            </div>
-        <div class="col-md-3">
-            <div class="about-info skill-thumb">
-                <div ng-repeat="passion in vm.passions">
+    </div>
+    <div class="col-md-4">
+        <div class="about-info skill-thumb">
+            <div ng-repeat="passion in vm.passions">
                 <strong ng-bind="passion.name"></strong>
                 <span class="pull-right" ng-bind="passion.percentage"></span>
                 <div class="progress">
-                     <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="passion.value" aria-valuemin="0" aria-valuemax="100" style="width: {{passion.percentage}};"></div>
-                </div></div>
-                        </div>
-                    </div>
-                </div>
-			</div>
+                   <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="passion.value" aria-valuemin="0" aria-valuemax="100" style="width: {{passion.percentage}};"></div>
+               </div></div>
+           </div>
+       </div>
+   </div>
+</div>

@@ -1,1 +1,3 @@
 I am a full-stack developer at glintt who also loves to develop in his free time. Other than that, I love learning about new and interesting libraries and cycling.
+
+ "keys": ["ctrl+shift+r"], "command": "reindent" , "args": { "single_line": false } }

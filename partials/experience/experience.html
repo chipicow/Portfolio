@@ -1,0 +1,12 @@
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <h2 class="page-header"><strong>What I've Been Up To</strong></h2>
+        </div>
+        <ul class="custom-bullet" ng-repeat="project in vm.projects">
+            <strong><p ng-bind="project.name"></p>
+                <div ng-repeat="point in project.points">
+                    <li style ="padding-left: 30px" ng-bind="point"></li></div></strong>
+                </ul>
+            </div>
+        </div>

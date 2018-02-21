@@ -1,26 +1,28 @@
 <div class="container">
-    <div class="row">
-        <div class="col-lg-12">
-            <h2 class="page-header">Profissional Experience</h2>
-        </div>
-        <section id="our_service">
-			<div class="container">
-        		<div class="main_content">
-				    <div class="services">
-			        	<div class="row">
-			        		<div class="col-md-3 col-sm-6" ng-repeat="skill in vm.skills">
-			        			<div class="service">
-       								 <img src="{{skill.image}}" alt="" style="width: 250px; height: 137px;" />
-			        				<div class="text-center">
-				        				<h4 ng-bind="skill.name"></h4>
-				        				<p ng-bind="skill.experience"></p>	
-			        				</div> <!-- .text-center -->
-			        			</div> <!-- .service -->
-			        		</div> <!-- .col-md-3 -->		        	
-			        	</div>	<!-- row -->
-					</div>	<!-- services -->
-				</div>	<!-- container -->
-				</div>	<!-- main_content -->
-		</section>	<!-- our_service -->
-	</div>
+  <div class="row">
+    <div class="col-lg-12">
+      <h2 class="page-header"><strong>Things I've Learned Along The Way </strong></h2>
+    </div>
+    <section id="our_service">
+     <div class="container">
+      <div class="main_content">
+        <div class="services">
+          <div class="row">
+           <div class="col-lg-3 col-sm-6 portfolio-item" ng-repeat="skill in vm.skills" > 
+            <div class="card h-100">
+              <img class="card-img-top" src="{{skill.image}}" alt="">
+              <div class="card-body">
+               <div class="card-title" style="text-align: center">
+                <strong ng-bind ="skill.name" ></strong>
+              </div>
+              <p style="color : #2d3544" class="card-text">Level: <span ng-bind="skill.experience"></p>
+              </div>
+            </div>
+          </div>	        	
+        </div>	<!-- row -->
+      </div>	<!-- services -->
+    </div>	<!-- container -->
+  </div>	<!-- main_content -->
+</section>	<!-- our_service -->
+</div>
 </div>
