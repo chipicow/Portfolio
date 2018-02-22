@@ -23,9 +23,6 @@
     "gulp-concat": "^2.6.1",
     "gulp-minify-html": "^1.0.6",
     "gulp-uglify": "^3.0.0",
-    "ws": "3.3.2",
-    "mongoose": "~3.8.0",
-    "body-parser": "~1.4.2",
-    "method-override": "~2.0.2"
+    "ws": "3.3.2"
   }
 }

@@ -37,7 +37,6 @@ app.controller('SkillsCtrl', function () {
 		image: 'images/skills/rubyonrails.jpg',
 		experience: 'Educational'
 	};
-
 	var node = {
 		name: 'NodeJs',
 		image: 'images/skills/node.jpg',
@@ -63,6 +62,16 @@ app.controller('SkillsCtrl', function () {
 		image: 'images/skills/sql.jpg',
 		experience: 'Advanced'
 	};
+	var mongodb = {
+		name: 'Mongo DataBases',
+		image: 'images/skills/mongodb.jpg',
+		experience: 'Beginner'
+	};
+	var azure = {
+		name: 'Microsoft Azure Cloud Hosting',
+		image: 'images/skills/azure.jpg',
+		experience: 'Beginner'
+	};
 	vm.skills.push(dotNet);
 	vm.skills.push(java);
 	vm.skills.push(angular);
@@ -75,4 +84,6 @@ app.controller('SkillsCtrl', function () {
 	vm.skills.push(nhibernate);
 	vm.skills.push(webservice);
 	vm.skills.push(sql);
+	vm.skills.push(mongodb);
+	vm.skills.push(azure);
 });
