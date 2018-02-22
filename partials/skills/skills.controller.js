@@ -4,12 +4,12 @@ app.controller('SkillsCtrl', function () {
 	var dotNet = {
 		name: '.Net',
 		image: 'images/skills/net.jpg',
-		experience: 'Professional'
+		experience: 'Advanced'
 	};
 	var csharp = {
 		name: 'C#',
 		image: 'images/skills/csharp.jpg',
-		experience: 'Professional'
+		experience: 'Advanced'
 	};
 	var java = {
 		name: 'Java',
@@ -19,18 +19,18 @@ app.controller('SkillsCtrl', function () {
 	var angular = {
 		name: 'AngularJs',
 		image: 'images/skills/angularjs.jpg',
-		experience: 'Professional'
+		experience: 'Advanced'
 	};
 	var html = {
 		name: 'Html',
 		image: 'images/skills/HTML5.jpg',
-		experience: 'Professional'
+		experience: 'Advanced'
 	};
 
 	var git = {
 		name: 'Git',
 		image: 'images/skills/git.jpg',
-		experience: 'Professional'
+		experience: 'Advanced'
 	};
 	var rubyonrails = {
 		name: 'Ruby on Rails',
@@ -41,22 +41,27 @@ app.controller('SkillsCtrl', function () {
 	var node = {
 		name: 'NodeJs',
 		image: 'images/skills/node.jpg',
-		experience: 'Professional'
+		experience: 'Intermediate'
 	};
 	var itextsharp = {
 		name: 'iTextSharp',
 		image: 'images/skills/itextsharp.jpg',
-		experience: 'Professional'
+		experience: 'Intermediate'
 	};
 	var nhibernate = {
 		name: 'NHibernate',
 		image: 'images/skills/nhibernate.jpg',
-		experience: 'Professional'
+		experience: 'Intermediate'
 	};
 	var webservice = {
 		name: 'WCF WebServices',
 		image: 'images/skills/webservice.jpg',
-		experience: 'Professional'
+		experience: 'Intermediate'
+	};
+	var sql = {
+		name: 'SQL DataBases',
+		image: 'images/skills/sql.jpg',
+		experience: 'Advanced'
 	};
 	vm.skills.push(dotNet);
 	vm.skills.push(java);
@@ -69,4 +74,5 @@ app.controller('SkillsCtrl', function () {
 	vm.skills.push(csharp);
 	vm.skills.push(nhibernate);
 	vm.skills.push(webservice);
+	vm.skills.push(sql);
 });

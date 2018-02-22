@@ -3,8 +3,8 @@ app.controller('ExperienceCtrl', function () {
 	vm.projects = [];
 	var device = {
 		name:'Device Cordinator',
-		points : ['BackEnd Development for a web application in the pharmacy market','Web Socket usage for an asynchronous and bidirecional communication',
-		'Tcp-Ip protocol communication to trigger events with pharmacy hardware','C# wrappers from c++ and delphi dlls','Duration 3 months'] 
+		points : ['BackEnd Development for a web application in the pharmacy market','Worked with Web Sockets for an asynchronous and bidirecional communication',
+		'Tcp-Ip protocol communication to trigger events with pharmacy devices software','Made C# wrappers for c++ and delphi dlls','Duration 3 months'] 
 	};
 	var device1 = {
 		name:'Estimation Tool',
@@ -14,7 +14,7 @@ app.controller('ExperienceCtrl', function () {
 	};
 	var mercedes ={
 		name:'Mercedes WebService',
-		points :['WebService development for pdf invoice generator','WCF WebService experience','iTextSharp library experience with one of the authors','Duration 3 weeks']
+		points :['WebService development for pdf invoice generator','Got to learn WCF WebServices','Developed with one of the authors of the iTextSharp library ','Duration 3 weeks']
 	}
 	vm.projects.push(device); 
 	vm.projects.push(device1); 
